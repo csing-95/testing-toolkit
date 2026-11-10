@@ -1,0 +1,45 @@
+# Testing Prep Toolkit V7
+
+A static HTML/CSS/JavaScript toolkit for GitHub Pages. V7 separates personal notes and the testing process into their own editable pages.
+
+## What's included
+
+- Package name generator using `CS_USxxxxx_TCxx_ddmmyy_hhmmss`, with current local timestamp or manual date/time.
+- DataURL Studio: image preview, rotate, flip, crop (freeform and preset ratios), resize, encoding, output optimisation, batch conversion and Data URL inspection.
+- Beginner testing Learning Pathway.
+- Searchable Testing Reference Guide.
+- **My Notes page:**
+  - Create multiple notes; rename and delete them.
+  - Organise notes into folders/categories such as Learning, Work Notes, Meetings, Testing Tasks, Technical Reference and To Remember.
+  - Add your own folders.
+  - Rich-text editor with bold, italic, underline, headings, font size, text colour, highlighting, bullets, numbered lists, checklists, tables, code blocks, hyperlinks, undo and redo.
+  - Autosave to the current browser, with HTML export for individual notes.
+- **Testing Process page:**
+  - Editable standard end-to-end testing workflow covering requirements, planning, test design, environment/data preparation, execution, defect reporting, retesting, regression and closure/reporting.
+  - Separate **Our Team Process** area where you can add, rename, edit, reorder and delete stages.
+  - Rich-text formatting in both standard and team process stages.
+  - Practical starting templates for test cases, defect reports, smoke testing, regression planning, UAT preparation and pre-testing readiness. Templates can be added as editable stages to your team process.
+  - Autosave plus explicit save controls and HTML export of the team process.
+- Test execution checklist.
+- Complete JSON backup and restore for notes, folders, process pages and checklist state. Older V6 backups with the previous single notes field are also accepted.
+
+## Run locally
+
+Open `index.html` in a modern browser. Clipboard functionality works best on HTTPS or localhost.
+
+## Publish on GitHub Pages
+
+1. Upload `index.html` and this README to the repository.
+2. In repository Settings → Pages, choose Deploy from a branch, select `main` and `/ (root)`, then save.
+
+## Data, privacy and compatibility
+
+- Image processing happens locally in the browser; images are not uploaded.
+- Notes and process content are saved in browser local storage on the current device/browser. GitHub Pages does not sync data between devices.
+- Use **Data & backup** to export/import a JSON backup before changing browsers or devices.
+- Do not store passwords, secrets or real customer/personal data in this tool.
+- Browser canvas output supports PNG, JPEG and WebP in modern browsers. Animated GIFs may be flattened; TIFF/ICO/BMP support depends on browser decoding.
+
+## Editing guidance
+
+The standard workflow is intended as a generic starting point, not a replacement for your organisation's process. Edit it to suit your needs, and document the team's actual workflow separately under **Our Team Process**. Always follow your organisation's policies, agreed entry/exit criteria, defect definitions and data-handling rules.
