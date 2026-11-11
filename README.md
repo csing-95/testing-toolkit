@@ -1,10 +1,10 @@
-# Testing Prep Toolkit V8
+# Testing Prep Toolkit V9
 
-A static HTML/CSS/JavaScript toolkit for GitHub Pages. V8 adds an Engineering File Generator with multi-format batch generation.
+A static HTML/CSS/JavaScript toolkit for GitHub Pages. V9 expands the Engineering File Generator with document-count, page-count, discipline and tagging controls.
 
 ## What's included
 
-- **Engineering File Generator:** select multiple formats, generate empty or populated starter files, preview consistent package filenames, download individually or as a ZIP. Supports PDF, DOC/DOCX, XLS/XLSX, CSV, TXT, HTML, JSON, XML, JPG, PNG, TIF/TIFF and DXF; DWG can be copied from a user-supplied template.
+- **Engineering File Generator:** select multiple formats, choose how many separate documents to generate and how many pages each document should contain, assign a discipline and comma-separated tags, generate blank or populated starter documents, preview filenames, and download individually or as a ZIP. Supports PDF, DOC/DOCX, XLS/XLSX, CSV, TXT, HTML, JSON, XML, JPG, PNG, TIF/TIFF and DXF; DWG can be copied from a user-supplied template.
 - Package name generator using `CS_USxxxxx_TCxx_ddmmyy_hhmmss`, with current local timestamp or manual date/time.
 - DataURL Studio: image preview, rotate, flip, crop (freeform and preset ratios), resize, encoding, output optimisation, batch conversion and Data URL inspection.
 - Beginner testing Learning Pathway.
@@ -49,6 +49,7 @@ The standard workflow is intended as a generic starting point, not a replacement
 ## Engineering file generator notes
 
 - DOC and XLS are HTML-based compatibility files, not legacy binary Office files. DOCX and XLSX are genuine Office Open XML packages.
+- PDF, DOC, DOCX and HTML populated documents support the selected page count; DOC/DOCX and PDF include page breaks. The selected discipline and tags are included in populated document content (and as structured fields in JSON). Blank mode creates blank documents with the requested page count where the format supports pages.
 - DWG is not generated from scratch: upload a valid DWG template to create a renamed copy. DXF is generated directly.
 - ZIP and DOCX/XLSX packaging uses JSZip loaded from jsDelivr; an internet connection is required for those packaging features. Other simple file types can be generated without it.
 - Blank raster image files are valid blank images; the TIFF output is a minimal 1×1 TIFF.
