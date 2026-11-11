@@ -1,9 +1,10 @@
-# Testing Prep Toolkit V7
+# Testing Prep Toolkit V8
 
-A static HTML/CSS/JavaScript toolkit for GitHub Pages. V7 separates personal notes and the testing process into their own editable pages.
+A static HTML/CSS/JavaScript toolkit for GitHub Pages. V8 adds an Engineering File Generator with multi-format batch generation.
 
 ## What's included
 
+- **Engineering File Generator:** select multiple formats, generate empty or populated starter files, preview consistent package filenames, download individually or as a ZIP. Supports PDF, DOC/DOCX, XLS/XLSX, CSV, TXT, HTML, JSON, XML, JPG, PNG, TIF/TIFF and DXF; DWG can be copied from a user-supplied template.
 - Package name generator using `CS_USxxxxx_TCxx_ddmmyy_hhmmss`, with current local timestamp or manual date/time.
 - DataURL Studio: image preview, rotate, flip, crop (freeform and preset ratios), resize, encoding, output optimisation, batch conversion and Data URL inspection.
 - Beginner testing Learning Pathway.
@@ -43,3 +44,11 @@ Open `index.html` in a modern browser. Clipboard functionality works best on HTT
 ## Editing guidance
 
 The standard workflow is intended as a generic starting point, not a replacement for your organisation's process. Edit it to suit your needs, and document the team's actual workflow separately under **Our Team Process**. Always follow your organisation's policies, agreed entry/exit criteria, defect definitions and data-handling rules.
+
+
+## Engineering file generator notes
+
+- DOC and XLS are HTML-based compatibility files, not legacy binary Office files. DOCX and XLSX are genuine Office Open XML packages.
+- DWG is not generated from scratch: upload a valid DWG template to create a renamed copy. DXF is generated directly.
+- ZIP and DOCX/XLSX packaging uses JSZip loaded from jsDelivr; an internet connection is required for those packaging features. Other simple file types can be generated without it.
+- Blank raster image files are valid blank images; the TIFF output is a minimal 1×1 TIFF.
